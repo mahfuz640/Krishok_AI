@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: krishok-ai-api
+    runtime: python
+    plan: free
+    buildCommand: pip install --no-cache-dir -r backend/requirements.txt
+    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.14.10
+      - key: WEB_CONCURRENCY
+        value: "1"
+      - key: KRISHOK_CORS_ORIGINS
+        value: https://krishok-ai-website.onrender.com,http://localhost:5173,http://127.0.0.1:5173
+
+  - type: web
+    name: krishok-ai-website
+    runtime: static
+    rootDir: website
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: NODE_VERSION
+        value: 24.22.1
+      - key: VITE_API_URL
+        value: https://krishok-ai-api.onrender.com
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
