@@ -11,14 +11,14 @@ const guides = [
 ];
 
 function App() {
-  const [file, setFile] = useState(null), [preview, setPreview] = useState(''), [result, setResult] = useState(null), [busy, setBusy] = useState(false), [error, setError] = useState(''), [menu, setMenu] = useState(false), [cameraOpen, setCameraOpen] = useState(false);
-  const input = useRef(null), videoRef = useRef(null), streamRef = useRef(null);
+  const [file, setFile] = useState(null), [preview, setPreview] = useState(''), [result, setResult] = useState(null), [busy, setBusy] = useState(false), [error, setError] = useState(''), [menu, setMenu] = useState(false), [cameraOpen, setCameraOpen] = useState(false), [live, setLive] = useState(false), [liveResult, setLiveResult] = useState(null), [liveError, setLiveError] = useState('');
+  const input = useRef(null), videoRef = useRef(null), streamRef = useRef(null), liveRef = useRef(false);
   useEffect(() => {
     if (!cameraOpen || !videoRef.current || !streamRef.current) return;
     videoRef.current.srcObject = streamRef.current;
     void videoRef.current.play().catch(() => setError('ক্যামেরার preview চালু করা যায়নি।'));
   }, [cameraOpen]);
-  useEffect(() => () => streamRef.current?.getTracks().forEach(track => track.stop()), []);
+  useEffect(() => () => { liveRef.current = false; streamRef.current?.getTracks().forEach(track => track.stop()); }, []);
   function choose(next) { if (!next) return; setFile(next); setPreview(URL.createObjectURL(next)); setResult(null); setError(''); }
   async function openCamera() {
     setError('');
@@ -26,7 +26,39 @@ function App() {
     try { streamRef.current = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { ideal: 'environment' } }, audio: false }); setCameraOpen(true); }
     catch { setError('ক্যামেরা চালু হয়নি। Browser permission দিন, অথবা ফাইল বেছে নিন।'); }
   }
-  function closeCamera() { streamRef.current?.getTracks().forEach(track => track.stop()); streamRef.current = null; setCameraOpen(false); }
+  function closeCamera() { liveRef.current = false; setLive(false); streamRef.current?.getTracks().forEach(track => track.stop()); streamRef.current = null; setCameraOpen(false); }
+  async function detectVideoFrame() {
+    const video = videoRef.current;
+    if (!video?.videoWidth || !video.videoHeight) throw new Error('Camera preview is not ready.');
+    const canvas = document.createElement('canvas');
+    const width = Math.min(video.videoWidth, 640);
+    canvas.width = width; canvas.height = Math.round(video.videoHeight * width / video.videoWidth);
+    const context = canvas.getContext('2d');
+    if (!context) throw new Error('Could not capture camera frame.');
+    context.drawImage(video, 0, 0, canvas.width, canvas.height);
+    const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/jpeg', 0.72));
+    if (!blob) throw new Error('Could not encode camera frame.');
+    const data = new FormData(); data.append('image', new File([blob], 'live-frame.jpg', { type: 'image/jpeg' }));
+    const response = await fetch(`${API}/v1/rice/detect`, { method: 'POST', body: data });
+    const payload = await response.json();
+    if (!response.ok) throw new Error(payload.detail || 'Live detection is unavailable.');
+    return payload;
+  }
+  async function startLiveDetection() {
+    if (liveRef.current) { liveRef.current = false; setLive(false); return; }
+    liveRef.current = true; setLive(true); setLiveError(''); setLiveResult(null);
+    while (liveRef.current) {
+      try {
+        const payload = await detectVideoFrame();
+        if (!liveRef.current) break;
+        setLiveResult(payload);
+      } catch (cause) {
+        if (liveRef.current) setLiveError(cause.message || 'Live detection failed.');
+        liveRef.current = false; setLive(false); break;
+      }
+      await new Promise(resolve => setTimeout(resolve, 1800));
+    }
+  }
   function capturePhoto() {
     const video = videoRef.current;
     if (!video?.videoWidth || !video.videoHeight) { setError('ক্যামেরা প্রস্তুত হয়নি, আরেকটু অপেক্ষা করুন।'); return; }
@@ -56,7 +88,7 @@ function App() {
       <section className="guide wrap" id="guide"><div className="guide-top"><div><div className="eyebrow">জানুন, চিনুন, যত্ন নিন</div><h2>ধানের পাতার রোগ গাইড</h2></div><a className="text-link" href="#scan">ছবি পরীক্ষা করুন <ArrowRight size={16}/></a></div><div className="guide-cards">{guides.map(([title,desc],i)=><article className="guide-card" key={title}><span className={`guide-mark mark-${i}`}>{i===0?'◉':i===1?'••':'〰'}</span><div><small>লক্ষণ চিনুন</small><h3>{title}</h3><p>{desc}</p><a href="#scan">পাতা পরীক্ষা করুন <ArrowRight size={14}/></a></div></article>)}</div><div className="guide-note"><CircleHelp size={17}/> রোগের লক্ষণ কাছাকাছি হতে পারে। নিশ্চিত হতে কৃষি সম্প্রসারণ অধিদপ্তর বা স্থানীয় বিশেষজ্ঞের পরামর্শ নিন।</div></section>
       <section className="bottom-cta" id="about"><div className="wrap cta-inner"><div><span className="cta-leaf"><Leaf size={20}/></span><h2>আপনার ফসল, আপনার যত্ন।</h2><p>প্রযুক্তি থাকুক কৃষকের হাতের নাগালে।</p></div><a className="button light" href="#scan">এখনই ছবি পরীক্ষা করুন <ArrowRight size={17}/></a></div></section>
     </main><footer className="wrap footer"><a className="brand" href="#home"><span className="brand-icon"><Leaf size={20}/></span><span>Krishok<span className="brand-ai"> AI</span><small>কৃষকের ডিজিটাল সঙ্গী</small></span></a><span>© ২০২৬ Krishok AI · কৃষকের পাশে প্রযুক্তি</span><a href="#guide">ব্যবহার নির্দেশনা <ChevronDown size={14}/></a></footer>
-    {cameraOpen&&<div className="camera-modal" onClick={closeCamera}><section className="camera-dialog" role="dialog" aria-modal="true" aria-label="ক্যামেরা দিয়ে ছবি তুলুন" onClick={e=>e.stopPropagation()}><header><b>ক্যামেরা দিয়ে ছবি তুলুন</b><button className="remove" onClick={closeCamera} aria-label="ক্যামেরা বন্ধ করুন"><X size={18}/></button></header><video ref={videoRef} autoPlay playsInline muted/><p>ধানের পাতাটি frame-এর মধ্যে রাখুন।</p><button className="button primary" onClick={capturePhoto}><Camera size={18}/> ছবি তুলুন</button></section></div>}
+    {cameraOpen&&<div className="camera-modal" onClick={closeCamera}><section className="camera-dialog" role="dialog" aria-modal="true" aria-label="ক্যামেরা দিয়ে ছবি তুলুন" onClick={e=>e.stopPropagation()}><header><b>ক্যামেরা দিয়ে ছবি তুলুন</b><button className="remove" onClick={closeCamera} aria-label="ক্যামেরা বন্ধ করুন"><X size={18}/></button></header><video ref={videoRef} autoPlay playsInline muted/><p>ধানের পাতা frame-এ রেখে live detection চালু করুন।</p><button className="button primary" onClick={()=>void startLiveDetection()}><Camera size={18}/>{live?'Live detection বন্ধ করুন':'Live detection শুরু করুন'}</button>{live&&<div className="live-status"><span className="live-dot"/>{liveResult?'ক্যামেরা live · সর্বশেষ frame বিশ্লেষণ করা হয়েছে':'ক্যামেরা live · প্রথম frame বিশ্লেষণ হচ্ছে…'}</div>}{liveResult&&<div className="live-result"><small>সম্ভাব্য শ্রেণি · confidence {Math.round(liveResult.confidence*100)}%</small><b>{liveResult.diseaseName==='Healthy'?'সুস্থ পাতা':liveResult.diseaseName}</b><span>এটি live frame-এর প্রাথমিক AI শ্রেণিবিন্যাস।</span></div>}{liveError&&<div className="message error">{liveError}</div>}<button className="camera-capture" onClick={capturePhoto}><Camera size={16}/> একটি ছবি তুলুন</button></section></div>}
   </div>
 }
 
