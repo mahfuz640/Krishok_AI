@@ -1,0 +1,21 @@
+{
+  "model": "torchvision.mobilenet_v3_large",
+  "pretrained_weights": "MobileNet_V3_Large_Weights.IMAGENET1K_V2",
+  "seed": 42,
+  "image_size": 224,
+  "epochs_max": 30,
+  "batch_size": 32,
+  "optimizer": "AdamW",
+  "scheduler": "ReduceLROnPlateau",
+  "early_stopping_patience": 8,
+  "torch": "2.14.1+cpu",
+  "torchvision": "0.29.1+cpu",
+  "python": "3.11.18",
+  "device": "cpu",
+  "cpu": "Intel64 Family 6 Model 167 Stepping 1, GenuineIntel",
+  "cpu_threads": 6,
+  "train_manifest_sha256": "baf1004abaa44f3ddddd7bde3abc5cefc15d06904e4b441eb0dcf87ea41d0b0d",
+  "val_manifest_sha256": "60706b05853801deb524ea078bccc7c62ef4a23029008d7b28a649afed2d0145",
+  "test_manifest_sha256": "91fdd26f22243861fcf1eea53b3312d1e1bcdb5800ffa822f56ab486b3d59d9f",
+  "test_used_for_training_or_tuning": false
+}

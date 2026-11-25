@@ -1,0 +1,19 @@
+{
+  "validation_top1": 0.8926862611073137,
+  "validation_top5": 0.9972658920027341,
+  "validation_macro_f1": 0.8769795201787519,
+  "validation_weighted_f1": 0.8930194456077701,
+  "latency_ms_per_image": 3.5342172932913254,
+  "input_shape": [
+    1,
+    224,
+    224,
+    3
+  ],
+  "input_dtype": "<class 'numpy.float32'>",
+  "output_shape": [
+    1,
+    6
+  ],
+  "output_dtype": "<class 'numpy.float32'>"
+}

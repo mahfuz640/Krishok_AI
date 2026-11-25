@@ -1,0 +1,20 @@
+{
+  "cpu": {
+    "device": "cpu",
+    "batch_size": 1,
+    "threads": 6,
+    "timed_iterations": 50,
+    "mean_ms": 19.181059999827994,
+    "median_ms": 19.149399999150774,
+    "p95_ms": 25.80016500014608,
+    "scope": "forward only; preprocessed 224x224 validation tensors"
+  },
+  "gpu": {
+    "status": "unavailable",
+    "reason": "No CUDA GPU is present; CPU-only run."
+  },
+  "parameters": 4209718,
+  "best_checkpoint_bytes": 17042371,
+  "best_checkpoint_MiB": 16.2528715133667,
+  "validation_images_for_benchmark": 50
+}

@@ -1,0 +1,110 @@
+﻿dataset,metadata_or_readme_class_id,archive_annotation_class_id,crop,class_name,archive_class_folder,verified_images,reported_images,verified_annotation_rows,annotation_format,verified_original_images,verified_augmented_images,reported_original_images,reported_augmented_images,audit_note
+RiceLeafDiseaseBD,0,1,Rice,Brown Spot,Brown Spot,2178,2178,9352,YOLO bbox for five disease classes; healthy has no boxes,2178,0,2178,0,Archive label ID differs from README class table.
+RiceLeafDiseaseBD,1,0,Rice,Blast,Blast,1326,1326,4844,YOLO bbox for five disease classes; healthy has no boxes,1326,0,1326,0,Archive label ID differs from README class table.
+RiceLeafDiseaseBD,2,,Rice,Healthy,Healthy,1575,1575,0,YOLO bbox for five disease classes; healthy has no boxes,1575,0,1575,0,No boxes and no per-image label files; class is represented by Original images folder.
+RiceLeafDiseaseBD,3,2,Rice,Leaf Smut,Leaf Smut,724,724,1501,YOLO bbox for five disease classes; healthy has no boxes,724,0,724,0,Archive label ID differs from README class table.
+RiceLeafDiseaseBD,4,3,Rice,Rice Tungro,Rice Tungro,2244,2244,3156,YOLO bbox for five disease classes; healthy has no boxes,2244,0,2244,0,Archive label ID differs from README class table.
+RiceLeafDiseaseBD,5,4,Rice,Sheath Blight,Sheath Blight,1722,1722,2607,YOLO bbox for five disease classes; healthy has no boxes,1722,0,1722,0,Archive label ID differs from README class table.
+Agri-Vision4,,,Bottle Gourd,Alternaria Leaf Blight,Alternaria_Leaf_Blight,1000,1000,0,Folder class; classification labels only,304,697,303,697,One valid PNG is named .jpg in the original archive; included in verified image count.
+Agri-Vision4,,,Bottle Gourd,Anthracnose,Anthracnose,1000,1000,0,Folder class; classification labels only,276,724,276,724,
+Agri-Vision4,,,Bottle Gourd,Downy Mildew,Downy_Mildew,1000,1000,0,Folder class; classification labels only,286,714,286,714,
+Agri-Vision4,,,Bottle Gourd,Early Alternaria Leaf Blight,Early_Alternaria_Leaf_Blight,1000,1000,0,Folder class; classification labels only,179,821,179,821,
+Agri-Vision4,,,Bottle Gourd,Fungal Damage Leaf,Fungal_Damage_Leaf,1000,1000,0,Folder class; classification labels only,39,961,39,961,
+Agri-Vision4,,,Bottle Gourd,Healthy,Healthy,1000,1000,0,Folder class; classification labels only,260,740,260,740,
+Agri-Vision4,,,Bottle Gourd,Mosaic Virus,Mosaic_Virus,1000,1000,0,Folder class; classification labels only,315,685,315,685,
+Agri-Vision4,,,Papaya,Bacterial Blight,Bacterial_Blight,1000,1000,0,Folder class; classification labels only,183,817,183,817,
+Agri-Vision4,,,Papaya,Carica Insect Hole,Carica_Insect_Hole,1000,1000,0,Folder class; classification labels only,318,682,318,682,
+Agri-Vision4,,,Papaya,Curled Yellow Spot,Curled_Yellow_Spot,1000,1000,0,Folder class; classification labels only,538,462,538,462,
+Agri-Vision4,,,Papaya,Healthy Leaf,healthy_leaf,1000,1000,0,Folder class; classification labels only,189,811,189,811,
+Agri-Vision4,,,Papaya,Mosaic Virus,Mosaic_Virus,1000,1000,0,Folder class; classification labels only,119,881,119,881,
+Agri-Vision4,,,Papaya,Pathogen Symptoms,pathogen_symptoms,1000,1000,0,Folder class; classification labels only,286,714,286,714,
+Agri-Vision4,,,Papaya,Yellow Necrotic Spots Holes,Yellow_Necrotic_Spots_Holes,1000,1000,0,Folder class; classification labels only,51,949,51,949,
+Agri-Vision4,,,Tomato,Downy,Downy Mildew (original); Downy (augmented),1000,1000,0,Folder class; classification labels only,57,943,57,943,
+Agri-Vision4,,,Tomato,Healthy,Healthy,1141,1000,0,Folder class; classification labels only,288,853,288,712,README count mismatch.
+Agri-Vision4,,,Tomato,Mosaic,Mosaic,1000,1000,0,Folder class; classification labels only,195,805,195,805,
+Agri-Vision4,,,Tomato,Spot,Spot,1000,1000,0,Folder class; classification labels only,311,689,311,689,
+Agri-Vision4,,,Tomato,White spot,white_spot (augmented),1000,1000,0,Folder class; classification labels only,65,935,65,935,
+Agri-Vision4,,,Zucchini,Angular Leaf Spot,Angular_Leaf_Spot,1000,1000,0,Folder class; classification labels only,120,880,120,880,
+Agri-Vision4,,,Zucchini,Anthracnose,Anthracnose,1000,1000,0,Folder class; classification labels only,129,871,129,871,
+Agri-Vision4,,,Zucchini,Downy Mildew,Downy_Midew,1000,1000,0,Folder class; classification labels only,153,847,153,847,
+Agri-Vision4,,,Zucchini,Dry Leaf,Dry_Leaf,1000,1000,0,Folder class; classification labels only,67,933,67,933,
+Agri-Vision4,,,Zucchini,Healthy,Healthy (original); Zucchini_Healthy (augmented),980,1000,0,Folder class; classification labels only,88,892,108,892,README count mismatch.
+Agri-Vision4,,,Zucchini,Insect Damage,Insect_Damage / Zucchini_Insect_Damage,1000,1000,0,Folder class; classification labels only,78,922,78,922,
+Agri-Vision4,,,Zucchini,Iron Chlorosis Damage,Iron_Chlorosis_Damage,1000,1000,0,Folder class; classification labels only,65,935,65,935,
+Agri-Vision4,,,Zucchini,Xanthomonas Leaf Spot,Xanthomonas_Leaf_Spot,1000,1000,0,Folder class; classification labels only,86,914,86,914,
+Agri-Vision4,,,Zucchini,Yellow Mosaic Virus,Yellow_Mosaic_Virus / Zucchini_Yellow_Mosaic_Virus,1000,1000,0,Folder class; classification labels only,202,798,202,798,
+BCDD,4,,Potato,Potato Early Blight,Potato___Early_blight,480,,0,Image-folder directory class,480,0,480,0,
+BCDD,2,,Corn,Corn Healthy,Corn_(maize)___healthy,480,,0,Image-folder directory class,480,0,480,0,
+BCDD,6,,Potato,Potato Late Blight,Potato___Late_blight,480,,0,Image-folder directory class,480,0,480,0,
+BCDD,15,,Tomato,Tomato Late Blight,Tomato___Late_blight,480,,0,Image-folder directory class,480,0,480,0,
+BCDD,17,,Wheat,Wheat Brown Rust,Wheat Brown rust,480,,0,Image-folder directory class,480,0,480,0,
+BCDD,13,,Tomato,Tomato Bacterial Spot,Tomato___Bacterial_spot,480,,0,Image-folder directory class,480,0,480,0,
+BCDD,,,Wheat,Wheat Loose Smut,Wheat Loose Smut,472,,0,Image-folder directory class,472,0,472,0,Archive class folder not in README class_label list.
+BCDD,,,Tomato,Tomato___Early_blight,Tomato___Early_blight,480,,0,Image-folder directory class,480,0,480,0,Archive class folder not in README class_label list.
+BCDD,1,,Corn,Corn Common Rust,Corn_(maize)___Common_rust_,480,,0,Image-folder directory class,480,0,480,0,
+BCDD,14,,Tomato,Tomato Healthy,Tomato___healthy,480,,0,Image-folder directory class,480,0,480,0,
+BCDD,18,,Wheat,Wheat Healthy,Wheat Healthy,480,,0,Image-folder directory class,480,0,480,0,
+BCDD,10,,Rice,Rice Leaf Blast,Rice_leaf_blast,440,,0,Image-folder directory class,440,0,440,0,
+BCDD,7,,Rice,Rice Bacterial Leaf Blight,Rice_bacterial_leaf_blight,480,,0,Image-folder directory class,480,0,480,0,
+BCDD,9,,Rice,Rice Healthy,Rice_healthy,440,,0,Image-folder directory class,440,0,440,0,
+BCDD,3,,Corn,Corn Northern Leaf Blight,Corn_(maize)___Northern_Leaf_Blight,480,,0,Image-folder directory class,480,0,480,0,
+BCDD,8,,Rice,Rice Brown Spot,Rice_brown_spot,440,,0,Image-folder directory class,440,0,440,0,
+BCDD,,,Wheat,Wheat Yellow rust,Wheat Yellow rust,480,,0,Image-folder directory class,480,0,480,0,Archive class folder not in README class_label list.
+BCDD,0,,Corn,Corn Cercospora Leaf Spot,Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot,480,,0,Image-folder directory class,480,0,480,0,
+BCDD,5,,Potato,Potato Healthy,Potato___healthy,480,,0,Image-folder directory class,480,0,480,0,
+BCDD,11,,Rice,Rice Leaf Scald,,0,,0,Image-folder directory class,0,0,0,0,README metadata class absent from BCDD.zip.
+BCDD,12,,Rice,Rice Narrow Brown Spot,,0,,0,Image-folder directory class,0,0,0,0,README metadata class absent from BCDD.zip.
+BCDD,16,,Tomato,Tomato Leaf Mold,,0,,0,Image-folder directory class,0,0,0,0,README metadata class absent from BCDD.zip.
+VegHealth14,0,,Bean,Angular Leaf Spot,Bean_Angular Leaf Spot,493,493,0,Image-folder directory class,493,0,493,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,1,,Bean,Healthy,Bean_Healthy,431,431,0,Image-folder directory class,431,0,431,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,2,,Bean,Rust,Bean_Rust,411,411,0,Image-folder directory class,411,0,411,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,3,,Bitter Gourd,Downy Mildew,Bitter Gourd_Downy Mildew,428,428,0,Image-folder directory class,428,0,428,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,4,,Bitter Gourd,Healthy,Bitter Gourd_Healthy,407,407,0,Image-folder directory class,407,0,407,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,5,,Bitter Gourd,Jassid,Bitter Gourd_Jassid,417,417,0,Image-folder directory class,417,0,417,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,6,,Bitter Gourd,Leaf Spot,Bitter Gourd_Leaf Spot,409,409,0,Image-folder directory class,409,0,409,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,7,,Bottle Gourd,Anthracnose,Bottle Gourd_Anthracnose,471,471,0,Image-folder directory class,471,0,471,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,8,,Bottle Gourd,Downy Mildew,Bottle Gourd_Downy Mildew,451,451,0,Image-folder directory class,451,0,451,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,9,,Bottle Gourd,Healthy,Bottle Gourd_Healthy,419,419,0,Image-folder directory class,419,0,419,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,10,,Cabbage,Alternaria Spot,Cabbage_Altenaria Spot,486,486,0,Image-folder directory class,486,0,486,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,11,,Cabbage,Black Rot,Cabbage_Black Rot,427,427,0,Image-folder directory class,427,0,427,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,12,,Cabbage,Downy Mildew,Cabbage_Downy Mildew,481,481,0,Image-folder directory class,481,0,481,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,13,,Cabbage,Healthy,Cabbage_Healthy,462,462,0,Image-folder directory class,462,0,462,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,14,,Cauliflower,Alternaria Leaf Spot,Cauliflower_Alternaria Leaf Spot,457,457,0,Image-folder directory class,457,0,457,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,15,,Cauliflower,Downy Mildew,Cauliflower_Downy Mildew,410,410,0,Image-folder directory class,410,0,410,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,16,,Cauliflower,Healthy,Cauliflower_Healthy,475,475,0,Image-folder directory class,475,0,475,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,17,,Chilli,Bacterial Spot,Chilli_Bacterial Spot,451,451,0,Image-folder directory class,451,0,451,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,18,,Chilli,Cercospora Leaf Spot,Chilli_Cercospora Leaf Spot,433,433,0,Image-folder directory class,433,0,433,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,19,,Chilli,Curl Virus,Chilli_Curl Virus,423,423,0,Image-folder directory class,423,0,423,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,20,,Chilli,Healthy,Chilli_Healthy,458,458,0,Image-folder directory class,458,0,458,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,21,,Cucumber,Anthracnose,Cucumber_Anthracnose,457,457,0,Image-folder directory class,457,0,457,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,22,,Cucumber,Bacterial Wilt,Cucumber_Bacterial Wilt,447,447,0,Image-folder directory class,447,0,447,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,23,,Cucumber,Downy Mildew,Cucumber_Downy Mildew,458,458,0,Image-folder directory class,458,0,458,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,24,,Cucumber,Healthy,Cucumber_Healthy,406,406,0,Image-folder directory class,406,0,406,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,25,,Eggplant,Healthy,Eggplant_Healthy,1451,1451,0,Image-folder directory class,1451,0,1451,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,26,,Eggplant,Leaf Spot Disease,Eggplant_Leaf Spot Disease,602,602,0,Image-folder directory class,602,0,602,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,27,,Eggplant,Mosaic Virus Disease,Eggplant_Mosaic Virus Disease,1362,1362,0,Image-folder directory class,1362,0,1362,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,28,,Eggplant,White Mold Disease,Eggplant_White Mold Disease,457,457,0,Image-folder directory class,457,0,457,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,29,,Eggplant,Wilt Disease,Eggplant_Wilt Disease,402,402,0,Image-folder directory class,402,0,402,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,30,,Okra,Downy Mildew,Okra_Downy Mildew,403,403,0,Image-folder directory class,403,0,403,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,31,,Okra,Healthy,Okra_Healthy,477,477,0,Image-folder directory class,477,0,477,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,32,,Okra,Leaf Curly Virus,Okra_Leaf curly virus,500,500,0,Image-folder directory class,500,0,500,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,33,,Potato,Early Blight,Potato_Early Blight,1000,1000,0,Image-folder directory class,1000,0,1000,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,34,,Potato,Healthy,Potato_Healthy,481,481,0,Image-folder directory class,481,0,481,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,35,,Potato,Late Blight,Potato_Late Blight,1000,1000,0,Image-folder directory class,1000,0,1000,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,36,,Radish,Black Leaf Spot,Radish_Black leaf spot,526,526,0,Image-folder directory class,526,0,526,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,37,,Radish,Downy Mildew,Radish_Downey mildew,601,601,0,Image-folder directory class,601,0,601,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,38,,Radish,Healthy,Radish_Healthy,613,613,0,Image-folder directory class,613,0,613,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,39,,Ridge Gourd,Healthy,Ridge gourd_Healthy,481,481,0,Image-folder directory class,481,0,481,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,40,,Ridge Gourd,Leaf Eating Insect,Ridge gourd_Leaf Eating Insect,482,482,0,Image-folder directory class,482,0,482,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,41,,Ridge Gourd,Leaf Eating Insect and Insect Egg Mass,Ridge gourd_Leaf Eating Insect and Insect Egg Mass,488,488,0,Image-folder directory class,488,0,488,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,42,,Ridge Gourd,Leaf Eating Insect and Mite,Ridge gourd_Leaf Eating Insect and Mite,413,413,0,Image-folder directory class,413,0,413,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,43,,Snake Gourd,Anthracnose,Snake Gourd_Anthracnose,434,434,0,Image-folder directory class,434,0,434,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,44,,Snake Gourd,Healthy,Snake Gourd_Healthy,403,403,0,Image-folder directory class,403,0,403,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,45,,Snake Gourd,Yellow,Snake Gourd_Yellow,438,438,0,Image-folder directory class,438,0,438,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,46,,Tomato,Bacterial Spot,Tomato_Bacterial_spot,460,460,0,Image-folder directory class,460,0,460,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,47,,Tomato,Early Blight,Tomato_Early_blight,470,470,0,Image-folder directory class,470,0,470,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,48,,Tomato,Healthy,Tomato_Healthy,463,463,0,Image-folder directory class,463,0,463,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,49,,Tomato,Late Blight,Tomato_Late_blight,460,460,0,Image-folder directory class,460,0,460,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,50,,Tomato,Leaf Mold,Tomato_Leaf_Mold,400,400,0,Image-folder directory class,400,0,400,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,51,,Tomato,Septoria Leaf Spot,Tomato_Septoria_leaf_spot,471,471,0,Image-folder directory class,471,0,471,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.
+VegHealth14,52,,Tomato,Yellow Leaf Curl Virus,Tomato_Tomato_Yellow_Leaf_Curl_Virus,476,476,0,Image-folder directory class,476,0,476,0,Exact MD5 records verified; duplicate and cross-class flags reviewed.

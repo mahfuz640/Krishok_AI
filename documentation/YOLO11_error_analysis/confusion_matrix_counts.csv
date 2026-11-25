@@ -1,0 +1,7 @@
+true_label\predicted_label,Blast,Brown spot,Healthy,Leaf smut,Rice Tungro,Sheath blight
+Blast,170,13,1,8,7,0
+Brown spot,14,275,8,11,18,0
+Healthy,2,11,219,4,0,0
+Leaf smut,6,18,2,81,2,0
+Rice Tungro,11,16,0,1,308,0
+Sheath blight,5,44,53,6,103,46

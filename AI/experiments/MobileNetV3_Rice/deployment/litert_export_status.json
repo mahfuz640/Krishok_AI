@@ -1,0 +1,13 @@
+{
+  "tensorflow": "2.10.1",
+  "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Jun 11 2026, 15:13:20) [MSC v.1942 64 bit (AMD64)]",
+  "calibration": "dynamic-range weight-only conversion; no activation calibration required",
+  "evaluation": "all approved val.csv rows; frozen test split not loaded",
+  "tflite_models": [
+    "tflite_fp32\\mobilenetv3_large_fp32_float32.tflite",
+    "tflite_fp32\\mobilenetv3_large_fp32_float16.tflite",
+    "tflite_int8\\mobilenetv3_large_fp32_dynamic_range_quant.tflite"
+  ],
+  "runtime": "TensorFlow Lite CPU interpreter; Android device runtime not tested",
+  "int8_quantization": "dynamic-range weight-only quantization; full integer activation quantization failed converter on Windows TensorFlow 2.10"
+}

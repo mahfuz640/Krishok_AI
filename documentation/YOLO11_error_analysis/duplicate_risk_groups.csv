@@ -1,0 +1,40 @@
+group_id,md5,member_count,class_labels,split,benchmark_status,output_paths
+md5_07f010d7040b963170b59a191d83a481,07f010d7040b963170b59a191d83a481,2,"[""Sheath blight""]",test,included,"[""test/Sheath blight/Sheath blight_277.jpg"", ""test/Sheath blight/Sheath blight_278.jpg""]"
+md5_186cf2a62c4a1968264d4eb08d72b4eb,186cf2a62c4a1968264d4eb08d72b4eb,2,"[""Rice Tungro"", ""Sheath blight""]",,unresolved_excluded,[]
+md5_1fb07ec7c9dea8db438a5dcd99782ea6,1fb07ec7c9dea8db438a5dcd99782ea6,2,"[""Sheath blight""]",val,included,"[""val/Sheath blight/Sheath blight_209.jpg"", ""val/Sheath blight/Sheath blight_210.jpg""]"
+md5_1ffd4c1880225fa24a970781513e8089,1ffd4c1880225fa24a970781513e8089,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_249.jpg"", ""train/Sheath blight/Sheath blight_250.jpg""]"
+md5_2757ddd8da43cfc901becac688825e86,2757ddd8da43cfc901becac688825e86,2,"[""Rice Tungro"", ""Sheath blight""]",,unresolved_excluded,[]
+md5_292058cc9c727c2bb2aa5607ff5d59dc,292058cc9c727c2bb2aa5607ff5d59dc,2,"[""Sheath blight""]",test,included,"[""test/Sheath blight/Sheath blight_233.jpg"", ""test/Sheath blight/Sheath blight_234.jpg""]"
+md5_3e61ea04344a8becc6b9cd70e51b5611,3e61ea04344a8becc6b9cd70e51b5611,2,"[""Leaf smut""]",train,included,"[""train/Leaf smut/Leaf smut_14.jpg"", ""train/Leaf smut/Leaf smut_15.jpg""]"
+md5_415151a8032f6f6025ac9c382516564f,415151a8032f6f6025ac9c382516564f,2,"[""Rice Tungro"", ""Sheath blight""]",,unresolved_excluded,[]
+md5_4a4faff1163941b36d5191c3be648681,4a4faff1163941b36d5191c3be648681,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_229.jpg"", ""train/Sheath blight/Sheath blight_230.jpg""]"
+md5_4d041345d4f868e2ee579557dbf4187c,4d041345d4f868e2ee579557dbf4187c,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_217.jpg"", ""train/Sheath blight/Sheath blight_218.jpg""]"
+md5_5446035ffa3c4b807dc4184bd0427972,5446035ffa3c4b807dc4184bd0427972,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_215.jpg"", ""train/Sheath blight/Sheath blight_216.jpg""]"
+md5_54cce05611b8639ec46aaba63ef4bcf2,54cce05611b8639ec46aaba63ef4bcf2,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_221.jpg"", ""train/Sheath blight/Sheath blight_222.jpg""]"
+md5_5a1b1e8dc416543df061d97d378540a3,5a1b1e8dc416543df061d97d378540a3,2,"[""Sheath blight""]",val,included,"[""val/Sheath blight/Sheath blight_275.jpg"", ""val/Sheath blight/Sheath blight_276.jpg""]"
+md5_647cb8bf97cfdbfcbafab758424cc324,647cb8bf97cfdbfcbafab758424cc324,2,"[""Blast""]",val,included,"[""val/Blast/blast_55.jpg"", ""val/Blast/blast_56.jpg""]"
+md5_745a81975b73e36d912fb2f636210912,745a81975b73e36d912fb2f636210912,2,"[""Sheath blight""]",val,included,"[""val/Sheath blight/Sheath blight_211.jpg"", ""val/Sheath blight/Sheath blight_212.jpg""]"
+md5_808f57c9ec1007a654066f91ebe9e0cd,808f57c9ec1007a654066f91ebe9e0cd,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_231.jpg"", ""train/Sheath blight/Sheath blight_232.jpg""]"
+md5_83197bdc8e9a54e7b9eee3caf74398c9,83197bdc8e9a54e7b9eee3caf74398c9,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_235.jpg"", ""train/Sheath blight/Sheath blight_236.jpg""]"
+md5_86b6cdf335e9bb4297a32bc604a4d970,86b6cdf335e9bb4297a32bc604a4d970,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_237.jpg"", ""train/Sheath blight/Sheath blight_238.jpg""]"
+md5_9f872d73a64e8a5e2cb72a327681b23e,9f872d73a64e8a5e2cb72a327681b23e,2,"[""Blast"", ""Rice Tungro""]",,unresolved_excluded,[]
+md5_a0fd486f6a7fd6f1a7a2510e9d58da15,a0fd486f6a7fd6f1a7a2510e9d58da15,2,"[""Rice Tungro"", ""Sheath blight""]",,unresolved_excluded,[]
+md5_a5e17da60b24270829424d54756ab9da,a5e17da60b24270829424d54756ab9da,2,"[""Sheath blight""]",test,included,"[""test/Sheath blight/Sheath blight_225.jpg"", ""test/Sheath blight/Sheath blight_226.jpg""]"
+md5_ad027f838353aa6bdabb2237dc0c9e62,ad027f838353aa6bdabb2237dc0c9e62,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_223.jpg"", ""train/Sheath blight/Sheath blight_224.jpg""]"
+md5_ad97443b88fe65226789f8e7816674b2,ad97443b88fe65226789f8e7816674b2,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_247.jpg"", ""train/Sheath blight/Sheath blight_248.jpg""]"
+md5_b5c2f7604914a4d41c6f315fa98de758,b5c2f7604914a4d41c6f315fa98de758,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_219.jpg"", ""train/Sheath blight/Sheath blight_220.jpg""]"
+md5_b819d4eeb89dc6ad6051e1e5f113240b,b819d4eeb89dc6ad6051e1e5f113240b,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_239.jpg"", ""train/Sheath blight/Sheath blight_240.jpg""]"
+md5_ba78cbaa5aa4588502bfa398bfaa9878,ba78cbaa5aa4588502bfa398bfaa9878,2,"[""Brown spot"", ""Leaf smut""]",,unresolved_excluded,[]
+md5_bbd59283ab6e122712d3fe6b4360c929,bbd59283ab6e122712d3fe6b4360c929,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_207.jpg"", ""train/Sheath blight/Sheath blight_208.jpg""]"
+md5_be03042149918ba84086fe224f4e8b05,be03042149918ba84086fe224f4e8b05,2,"[""Leaf smut""]",val,included,"[""val/Leaf smut/Leaf smut_12.jpg"", ""val/Leaf smut/Leaf smut_13.jpg""]"
+md5_beaae49de25a2cd2b04c38b902b1f6a7,beaae49de25a2cd2b04c38b902b1f6a7,2,"[""Healthy""]",train,included,"[""train/Healthy/Healthy_514.jpg"", ""train/Healthy/Healthy_515.jpg""]"
+md5_c84460146f9acaaa8c39bc346beb6388,c84460146f9acaaa8c39bc346beb6388,2,"[""Brown spot"", ""Healthy""]",,unresolved_excluded,[]
+md5_cdb883f62a7c035680706d07bb2fbee3,cdb883f62a7c035680706d07bb2fbee3,2,"[""Sheath blight""]",val,included,"[""val/Sheath blight/Sheath blight_213.jpg"", ""val/Sheath blight/Sheath blight_214.jpg""]"
+md5_d1b5decc2d68fa1430a46cbcfb39a754,d1b5decc2d68fa1430a46cbcfb39a754,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_346.jpg"", ""train/Sheath blight/Sheath blight_347.jpg""]"
+md5_d22a248a4d0ea12d2da40c225a060a50,d22a248a4d0ea12d2da40c225a060a50,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_279.jpg"", ""train/Sheath blight/Sheath blight_280.jpg""]"
+md5_d248e9d54b2c1a852b99f5d084f54c78,d248e9d54b2c1a852b99f5d084f54c78,2,"[""Sheath blight""]",test,included,"[""test/Sheath blight/Sheath blight_252.jpg"", ""test/Sheath blight/Sheath blight_253.jpg""]"
+md5_d53f8f2f998d079df130fc27ad0f9faf,d53f8f2f998d079df130fc27ad0f9faf,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_227.jpg"", ""train/Sheath blight/Sheath blight_228.jpg""]"
+md5_d975f5911ef48a349948717625ec33e5,d975f5911ef48a349948717625ec33e5,2,"[""Rice Tungro"", ""Sheath blight""]",,unresolved_excluded,[]
+md5_e0faa5914503f1315d6b59fbff9c9cec,e0faa5914503f1315d6b59fbff9c9cec,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_19.jpg"", ""train/Sheath blight/Sheath blight_20.jpg""]"
+md5_edcbfd217ccfaca48015a091bce68504,edcbfd217ccfaca48015a091bce68504,2,"[""Sheath blight""]",train,included,"[""train/Sheath blight/Sheath blight_281.jpg"", ""train/Sheath blight/Sheath blight_282.jpg""]"
+md5_f352ce5493586c1c737610555737ee4b,f352ce5493586c1c737610555737ee4b,2,"[""Blast""]",train,included,"[""train/Blast/blast_50.jpg"", ""train/Blast/blast_51.jpg""]"

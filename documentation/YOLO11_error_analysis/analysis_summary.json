@@ -1,0 +1,69 @@
+{
+  "model": "YOLO11n-cls",
+  "checkpoint": "rice\\KrishokAI_results_archive\\YOLO11_Rice_v1_local\\weights\\best.pt",
+  "test_manifest_sha256": "91fdd26f22243861fcf1eea53b3312d1e1bcdb5800ffa822f56ab486b3d59d9f",
+  "test_images": 1463,
+  "accuracy_top1": 0.7511961722488039,
+  "accuracy_top5": 0.9501025290498974,
+  "class_order": [
+    "Blast",
+    "Brown spot",
+    "Healthy",
+    "Leaf smut",
+    "Rice Tungro",
+    "Sheath blight"
+  ],
+  "test_class_counts": {
+    "Blast": 199,
+    "Brown spot": 326,
+    "Healthy": 236,
+    "Leaf smut": 109,
+    "Rice Tungro": 336,
+    "Sheath blight": 257
+  },
+  "sheath_blight_errors": 211,
+  "sheath_blight_error_destinations": {
+    "Rice Tungro": 103,
+    "Healthy": 53,
+    "Brown spot": 44,
+    "Leaf smut": 6,
+    "Blast": 5
+  },
+  "duplicate_audit": {
+    "manifest_group_rows_by_split": {
+      "train": 6806,
+      "val": 1457,
+      "test": 1459,
+      "": 8
+    },
+    "test_exact_duplicate_groups": 4,
+    "test_groups_with_multiple_members": 4,
+    "cross_split_exact_duplicate_groups": 0,
+    "unresolved_cross_class_groups_excluded": 8,
+    "cross_class_review_status_counts": {
+      "unresolved_excluded": 8
+    },
+    "note": "MD5 duplicate checks detect byte-identical files; near-duplicate visual similarity is not assessed."
+  },
+  "image_quality": {
+    "image_dimensions": {
+      "1024x1024": 1463
+    },
+    "unreadable_images": 0,
+    "laplacian_variance_blur_proxy": {
+      "median": 144.51788330078125,
+      "p10": 79.78859100341798,
+      "below_10": 0
+    },
+    "mean_brightness_0_255": {
+      "median": 115.4034652709961,
+      "below_40": 0,
+      "above_215": 0
+    }
+  },
+  "inference": {
+    "imgsz": 224,
+    "device": "cpu",
+    "training_or_tuning_performed": false
+  }
+}

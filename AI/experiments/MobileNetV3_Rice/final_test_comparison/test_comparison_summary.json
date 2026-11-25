@@ -1,0 +1,55 @@
+{
+  "evaluation": "one-pass final test evaluation; inference only; no tuning",
+  "test_images": 1463,
+  "test_manifest_sha256": "91fdd26f22243861fcf1eea53b3312d1e1bcdb5800ffa822f56ab486b3d59d9f",
+  "class_to_id": {
+    "Blast": 0,
+    "Brown spot": 1,
+    "Healthy": 2,
+    "Leaf smut": 3,
+    "Rice Tungro": 4,
+    "Sheath blight": 5
+  },
+  "test_labels_modified": false,
+  "test_used_for_training_or_tuning": false,
+  "models": [
+    {
+      "model": "MobileNetV3-Large",
+      "accuracy": 0.885850991114149,
+      "top5_accuracy": 0.9979494190020506,
+      "macro_precision": 0.8709575063171485,
+      "macro_recall": 0.8777980895377238,
+      "macro_f1": 0.8726286651541306,
+      "weighted_precision": 0.8902111129727905,
+      "weighted_recall": 0.885850991114149,
+      "weighted_f1": 0.8869854359759022,
+      "test_images": 1463,
+      "parameters": 4209718,
+      "checkpoint_bytes": 17042371,
+      "checkpoint_MiB": 16.2528715133667,
+      "inference_total_seconds": 32.13042999999743,
+      "latency_mean_ms_per_image": 21.962016404646228,
+      "inference_device": "cpu",
+      "test_manifest_sha256": "91fdd26f22243861fcf1eea53b3312d1e1bcdb5800ffa822f56ab486b3d59d9f"
+    },
+    {
+      "model": "YOLO11n-cls",
+      "accuracy": 0.7511961722488039,
+      "top5_accuracy": 0.9501025290498974,
+      "macro_precision": 0.792254721666279,
+      "macro_recall": 0.7440950000428977,
+      "macro_f1": 0.7162554020618265,
+      "weighted_precision": 0.7900793763948,
+      "weighted_recall": 0.7511961722488039,
+      "weighted_f1": 0.715082498499295,
+      "test_images": 1463,
+      "parameters": 1538790,
+      "checkpoint_bytes": 3198210,
+      "checkpoint_MiB": 3.050050735473633,
+      "inference_total_seconds": 31.645712400000775,
+      "latency_mean_ms_per_image": 21.63069883800463,
+      "inference_device": "cpu",
+      "test_manifest_sha256": "91fdd26f22243861fcf1eea53b3312d1e1bcdb5800ffa822f56ab486b3d59d9f"
+    }
+  ]
+}

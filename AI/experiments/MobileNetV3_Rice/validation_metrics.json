@@ -1,0 +1,45 @@
+{
+  "model": "MobileNetV3-Large",
+  "weights": "ImageNet pretrained",
+  "seed": 42,
+  "epochs_completed": 13,
+  "best_epoch": 5,
+  "training_minutes": 94.66592555666666,
+  "validation_images": 1463,
+  "accuracy": 0.8926862611073137,
+  "macro_precision": 0.874105392108442,
+  "macro_recall": 0.8838623909628157,
+  "macro_f1": 0.8769795201787519,
+  "weighted_f1": 0.8930194456077701,
+  "class_to_id": {
+    "Blast": 0,
+    "Brown spot": 1,
+    "Healthy": 2,
+    "Leaf smut": 3,
+    "Rice Tungro": 4,
+    "Sheath blight": 5
+  },
+  "train_manifest_sha256": "baf1004abaa44f3ddddd7bde3abc5cefc15d06904e4b441eb0dcf87ea41d0b0d",
+  "val_manifest_sha256": "60706b05853801deb524ea078bccc7c62ef4a23029008d7b28a649afed2d0145",
+  "test_manifest_sha256": "91fdd26f22243861fcf1eea53b3312d1e1bcdb5800ffa822f56ab486b3d59d9f",
+  "test_used_for_training_or_tuning": false,
+  "parameters": 4209718,
+  "best_checkpoint_bytes": 17042371,
+  "best_checkpoint_MiB": 16.2528715133667,
+  "last_checkpoint_bytes": 17042371,
+  "cpu_inference_latency": {
+    "device": "cpu",
+    "batch_size": 1,
+    "threads": 6,
+    "timed_iterations": 50,
+    "mean_ms": 19.181059999827994,
+    "median_ms": 19.149399999150774,
+    "p95_ms": 25.80016500014608,
+    "scope": "forward only; preprocessed 224x224 validation tensors"
+  },
+  "gpu_inference_latency": {
+    "status": "unavailable",
+    "reason": "No CUDA GPU is present; CPU-only run."
+  },
+  "latency_scope": "Forward-only, batch-one inference on preprocessed 224x224 validation tensors."
+}

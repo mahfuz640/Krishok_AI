@@ -1,0 +1,25 @@
+# Installed dependencies and generated app output
+**/node_modules/
+**/.expo/
+**/dist/
+**/web-build/
+**/.venv/
+**/__pycache__/
+**/*.py[cod]
+*.tsbuildinfo
+
+# Local datasets and large source archives
+/AI/data/
+/*.zip
+
+# Generated training intermediates
+/AI/experiments/MobileNetV3_Rice/*.pt
+!/AI/experiments/MobileNetV3_Rice/best_model.pt
+/AI/experiments/MobileNetV3_Rice/*.log
+/AI/experiments/MobileNetV3_Rice/deployment/*
+!/AI/experiments/MobileNetV3_Rice/deployment/*.md
+!/AI/experiments/MobileNetV3_Rice/deployment/*.json
+!/AI/experiments/MobileNetV3_Rice/deployment/*.csv
+!/AI/experiments/MobileNetV3_Rice/deployment/*.py
+!/AI/experiments/MobileNetV3_Rice/deployment/*.txt
+/.git-app-backup/

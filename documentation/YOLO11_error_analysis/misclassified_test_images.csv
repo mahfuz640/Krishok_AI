@@ -1,0 +1,365 @@
+image_path,true_label,predicted_label,confidence
+test/Blast/blast_1002.jpg,Blast,Brown spot,0.975396
+test/Blast/blast_1288.jpg,Blast,Brown spot,0.968450
+test/Blast/blast_1326.jpg,Blast,Healthy,0.896148
+test/Blast/blast_141.jpg,Blast,Brown spot,0.836326
+test/Blast/blast_145.jpg,Blast,Leaf smut,0.616680
+test/Blast/blast_175.jpg,Blast,Rice Tungro,0.621115
+test/Blast/blast_191.jpg,Blast,Rice Tungro,0.995507
+test/Blast/blast_232.jpg,Blast,Leaf smut,0.909542
+test/Blast/blast_28.jpg,Blast,Rice Tungro,0.553776
+test/Blast/blast_302.jpg,Blast,Rice Tungro,0.326157
+test/Blast/blast_331.jpg,Blast,Brown spot,0.545980
+test/Blast/blast_335.jpg,Blast,Brown spot,0.710602
+test/Blast/blast_339.jpg,Blast,Brown spot,0.597621
+test/Blast/blast_353.jpg,Blast,Rice Tungro,0.612508
+test/Blast/blast_380.jpg,Blast,Leaf smut,0.733986
+test/Blast/blast_381.jpg,Blast,Brown spot,0.575341
+test/Blast/blast_388.jpg,Blast,Leaf smut,0.774523
+test/Blast/blast_394.jpg,Blast,Brown spot,0.794444
+test/Blast/blast_441.jpg,Blast,Brown spot,0.903687
+test/Blast/blast_481.jpg,Blast,Rice Tungro,0.370626
+test/Blast/blast_517.jpg,Blast,Leaf smut,0.527712
+test/Blast/blast_521.jpg,Blast,Brown spot,0.672008
+test/Blast/blast_551.jpg,Blast,Brown spot,0.964688
+test/Blast/blast_614.jpg,Blast,Leaf smut,0.841461
+test/Blast/blast_616.jpg,Blast,Leaf smut,0.515007
+test/Blast/blast_666.jpg,Blast,Brown spot,0.816624
+test/Blast/blast_696.jpg,Blast,Leaf smut,0.806606
+test/Blast/blast_697.jpg,Blast,Brown spot,0.549737
+test/Blast/blast_81.jpg,Blast,Rice Tungro,0.517250
+test/Brown spot/brown spot_1005.jpg,Brown spot,Blast,0.952069
+test/Brown spot/brown spot_125.jpg,Brown spot,Blast,0.749674
+test/Brown spot/brown spot_1267.jpg,Brown spot,Rice Tungro,0.733589
+test/Brown spot/brown spot_134.jpg,Brown spot,Leaf smut,0.715315
+test/Brown spot/brown spot_143.jpg,Brown spot,Healthy,0.713455
+test/Brown spot/brown spot_144.jpg,Brown spot,Blast,0.364041
+test/Brown spot/brown spot_15.jpg,Brown spot,Leaf smut,0.633751
+test/Brown spot/brown spot_1642.jpg,Brown spot,Rice Tungro,0.985180
+test/Brown spot/brown spot_1795.jpg,Brown spot,Rice Tungro,0.830737
+test/Brown spot/brown spot_1796.jpg,Brown spot,Rice Tungro,0.559733
+test/Brown spot/brown spot_19.jpg,Brown spot,Blast,0.590236
+test/Brown spot/brown spot_2152.jpg,Brown spot,Rice Tungro,0.998650
+test/Brown spot/brown spot_2153.jpg,Brown spot,Rice Tungro,0.987487
+test/Brown spot/brown spot_2156.jpg,Brown spot,Rice Tungro,0.997177
+test/Brown spot/brown spot_225.jpg,Brown spot,Leaf smut,0.447527
+test/Brown spot/brown spot_285.jpg,Brown spot,Healthy,0.906944
+test/Brown spot/brown spot_30.jpg,Brown spot,Blast,0.930998
+test/Brown spot/brown spot_303.jpg,Brown spot,Rice Tungro,0.990893
+test/Brown spot/brown spot_318.jpg,Brown spot,Rice Tungro,0.850524
+test/Brown spot/brown spot_332.jpg,Brown spot,Rice Tungro,0.667692
+test/Brown spot/brown spot_340.jpg,Brown spot,Rice Tungro,0.367220
+test/Brown spot/brown spot_354.jpg,Brown spot,Rice Tungro,0.937037
+test/Brown spot/brown spot_368.jpg,Brown spot,Blast,0.472399
+test/Brown spot/brown spot_371.jpg,Brown spot,Blast,0.690749
+test/Brown spot/brown spot_390.jpg,Brown spot,Leaf smut,0.528537
+test/Brown spot/brown spot_397.jpg,Brown spot,Leaf smut,0.969792
+test/Brown spot/brown spot_402.jpg,Brown spot,Rice Tungro,0.472816
+test/Brown spot/brown spot_411.jpg,Brown spot,Leaf smut,0.924154
+test/Brown spot/brown spot_418.jpg,Brown spot,Leaf smut,0.625081
+test/Brown spot/brown spot_424.jpg,Brown spot,Rice Tungro,0.529422
+test/Brown spot/brown spot_427.jpg,Brown spot,Blast,0.648075
+test/Brown spot/brown spot_452.jpg,Brown spot,Rice Tungro,0.652079
+test/Brown spot/brown spot_458.jpg,Brown spot,Healthy,0.568272
+test/Brown spot/brown spot_47.jpg,Brown spot,Healthy,0.712959
+test/Brown spot/brown spot_479.jpg,Brown spot,Blast,0.887192
+test/Brown spot/brown spot_492.jpg,Brown spot,Leaf smut,0.672434
+test/Brown spot/brown spot_566.jpg,Brown spot,Rice Tungro,0.915796
+test/Brown spot/brown spot_589.jpg,Brown spot,Rice Tungro,0.634966
+test/Brown spot/brown spot_593.jpg,Brown spot,Rice Tungro,0.576317
+test/Brown spot/brown spot_615.jpg,Brown spot,Healthy,0.868354
+test/Brown spot/brown spot_617.jpg,Brown spot,Leaf smut,0.998091
+test/Brown spot/brown spot_618.jpg,Brown spot,Healthy,0.973342
+test/Brown spot/brown spot_671.jpg,Brown spot,Blast,0.993516
+test/Brown spot/brown spot_672.jpg,Brown spot,Blast,0.960265
+test/Brown spot/brown spot_684.jpg,Brown spot,Leaf smut,0.608558
+test/Brown spot/brown spot_686.jpg,Brown spot,Blast,0.675803
+test/Brown spot/brown spot_696.jpg,Brown spot,Healthy,0.579209
+test/Brown spot/brown spot_766.jpg,Brown spot,Blast,0.906404
+test/Brown spot/brown spot_768.jpg,Brown spot,Healthy,0.861686
+test/Brown spot/brown spot_819.jpg,Brown spot,Blast,0.581842
+test/Brown spot/brown spot_85.jpg,Brown spot,Leaf smut,0.748197
+test/Healthy/Healthy_1004.jpg,Healthy,Leaf smut,0.476573
+test/Healthy/Healthy_102.jpg,Healthy,Brown spot,0.958569
+test/Healthy/Healthy_1388.jpg,Healthy,Brown spot,0.723826
+test/Healthy/Healthy_1397.jpg,Healthy,Blast,0.736566
+test/Healthy/Healthy_1505.jpg,Healthy,Blast,0.835723
+test/Healthy/Healthy_207.jpg,Healthy,Brown spot,0.544949
+test/Healthy/Healthy_213.jpg,Healthy,Brown spot,0.501109
+test/Healthy/Healthy_217.jpg,Healthy,Leaf smut,0.699850
+test/Healthy/Healthy_22.jpg,Healthy,Brown spot,0.483692
+test/Healthy/Healthy_405.jpg,Healthy,Leaf smut,0.464925
+test/Healthy/Healthy_57.jpg,Healthy,Brown spot,0.941360
+test/Healthy/Healthy_679.jpg,Healthy,Brown spot,0.580216
+test/Healthy/Healthy_683.jpg,Healthy,Brown spot,0.496878
+test/Healthy/Healthy_688.jpg,Healthy,Brown spot,0.385144
+test/Healthy/Healthy_702.jpg,Healthy,Brown spot,0.487223
+test/Healthy/Healthy_71.jpg,Healthy,Brown spot,0.825855
+test/Healthy/Healthy_902.jpg,Healthy,Leaf smut,1.000000
+test/Leaf smut/Leaf smut_106.jpg,Leaf smut,Blast,0.533187
+test/Leaf smut/Leaf smut_114.jpg,Leaf smut,Blast,0.794767
+test/Leaf smut/Leaf smut_118.jpg,Leaf smut,Blast,0.777146
+test/Leaf smut/Leaf smut_147.jpg,Leaf smut,Brown spot,0.695947
+test/Leaf smut/Leaf smut_192.jpg,Leaf smut,Blast,0.445037
+test/Leaf smut/Leaf smut_234.jpg,Leaf smut,Brown spot,0.886965
+test/Leaf smut/Leaf smut_237.jpg,Leaf smut,Brown spot,0.755699
+test/Leaf smut/Leaf smut_24.jpg,Leaf smut,Brown spot,0.566029
+test/Leaf smut/Leaf smut_255.jpg,Leaf smut,Brown spot,0.741144
+test/Leaf smut/Leaf smut_26.jpg,Leaf smut,Brown spot,0.766835
+test/Leaf smut/Leaf smut_264.jpg,Leaf smut,Brown spot,0.494687
+test/Leaf smut/Leaf smut_266.jpg,Leaf smut,Brown spot,0.944805
+test/Leaf smut/Leaf smut_267.jpg,Leaf smut,Brown spot,0.481526
+test/Leaf smut/Leaf smut_280.jpg,Leaf smut,Brown spot,0.634447
+test/Leaf smut/Leaf smut_285.jpg,Leaf smut,Rice Tungro,0.909456
+test/Leaf smut/Leaf smut_316.jpg,Leaf smut,Brown spot,0.964841
+test/Leaf smut/Leaf smut_32.jpg,Leaf smut,Brown spot,0.916058
+test/Leaf smut/Leaf smut_365.jpg,Leaf smut,Rice Tungro,0.543778
+test/Leaf smut/Leaf smut_48.jpg,Leaf smut,Brown spot,0.407861
+test/Leaf smut/Leaf smut_5.jpg,Leaf smut,Blast,0.841642
+test/Leaf smut/Leaf smut_532.jpg,Leaf smut,Brown spot,0.540973
+test/Leaf smut/Leaf smut_539.jpg,Leaf smut,Healthy,0.987602
+test/Leaf smut/Leaf smut_57.jpg,Leaf smut,Brown spot,0.915693
+test/Leaf smut/Leaf smut_59.jpg,Leaf smut,Brown spot,0.421286
+test/Leaf smut/Leaf smut_63.jpg,Leaf smut,Brown spot,0.741454
+test/Leaf smut/Leaf smut_72.jpg,Leaf smut,Healthy,0.938955
+test/Leaf smut/Leaf smut_75.jpg,Leaf smut,Blast,0.676215
+test/Leaf smut/Leaf smut_94.jpg,Leaf smut,Brown spot,0.935559
+test/Rice Tungro/Rice Tungro_1214.jpg,Rice Tungro,Brown spot,0.702042
+test/Rice Tungro/Rice Tungro_1224.jpg,Rice Tungro,Brown spot,0.998562
+test/Rice Tungro/Rice Tungro_1254.jpg,Rice Tungro,Blast,0.460667
+test/Rice Tungro/Rice Tungro_1256.jpg,Rice Tungro,Brown spot,0.584080
+test/Rice Tungro/Rice Tungro_1418.jpg,Rice Tungro,Blast,0.996841
+test/Rice Tungro/Rice Tungro_1673.jpg,Rice Tungro,Brown spot,0.802988
+test/Rice Tungro/Rice Tungro_1826.jpg,Rice Tungro,Blast,0.821541
+test/Rice Tungro/Rice Tungro_1827.jpg,Rice Tungro,Blast,0.570859
+test/Rice Tungro/Rice Tungro_214.jpg,Rice Tungro,Blast,0.564749
+test/Rice Tungro/Rice Tungro_2236.jpg,Rice Tungro,Brown spot,0.633973
+test/Rice Tungro/Rice Tungro_284.jpg,Rice Tungro,Blast,0.821401
+test/Rice Tungro/Rice Tungro_297.jpg,Rice Tungro,Brown spot,0.839816
+test/Rice Tungro/Rice Tungro_328.jpg,Rice Tungro,Blast,0.563265
+test/Rice Tungro/Rice Tungro_346.jpg,Rice Tungro,Brown spot,0.802121
+test/Rice Tungro/Rice Tungro_349.jpg,Rice Tungro,Blast,0.950694
+test/Rice Tungro/Rice Tungro_35.jpg,Rice Tungro,Brown spot,0.553946
+test/Rice Tungro/Rice Tungro_384.jpg,Rice Tungro,Brown spot,0.965249
+test/Rice Tungro/Rice Tungro_394.jpg,Rice Tungro,Brown spot,0.604700
+test/Rice Tungro/Rice Tungro_439.jpg,Rice Tungro,Brown spot,0.732797
+test/Rice Tungro/Rice Tungro_610.jpg,Rice Tungro,Leaf smut,0.913280
+test/Rice Tungro/Rice Tungro_686.jpg,Rice Tungro,Brown spot,0.384303
+test/Rice Tungro/Rice Tungro_711.jpg,Rice Tungro,Brown spot,0.570656
+test/Rice Tungro/Rice Tungro_812.jpg,Rice Tungro,Brown spot,0.854713
+test/Rice Tungro/Rice Tungro_868.jpg,Rice Tungro,Brown spot,0.502774
+test/Rice Tungro/Rice Tungro_881.jpg,Rice Tungro,Blast,0.759619
+test/Rice Tungro/Rice Tungro_920.jpg,Rice Tungro,Blast,0.995182
+test/Rice Tungro/Rice Tungro_942.jpg,Rice Tungro,Blast,0.641371
+test/Rice Tungro/Rice Tungro_944.jpg,Rice Tungro,Brown spot,0.625755
+test/Sheath blight/Sheath blight_100.jpg,Sheath blight,Rice Tungro,0.963650
+test/Sheath blight/Sheath blight_1004.jpg,Sheath blight,Rice Tungro,0.436983
+test/Sheath blight/Sheath blight_1015.jpg,Sheath blight,Rice Tungro,0.562648
+test/Sheath blight/Sheath blight_1029.jpg,Sheath blight,Healthy,0.836584
+test/Sheath blight/Sheath blight_103.jpg,Sheath blight,Rice Tungro,0.579316
+test/Sheath blight/Sheath blight_1052.jpg,Sheath blight,Healthy,0.913334
+test/Sheath blight/Sheath blight_1067.jpg,Sheath blight,Brown spot,0.455265
+test/Sheath blight/Sheath blight_1080.jpg,Sheath blight,Rice Tungro,0.318138
+test/Sheath blight/Sheath blight_1087.jpg,Sheath blight,Healthy,0.473568
+test/Sheath blight/Sheath blight_1114.jpg,Sheath blight,Rice Tungro,0.970467
+test/Sheath blight/Sheath blight_1122.jpg,Sheath blight,Rice Tungro,0.999632
+test/Sheath blight/Sheath blight_1132.jpg,Sheath blight,Rice Tungro,0.989939
+test/Sheath blight/Sheath blight_1134.jpg,Sheath blight,Healthy,0.999053
+test/Sheath blight/Sheath blight_1138.jpg,Sheath blight,Rice Tungro,0.986778
+test/Sheath blight/Sheath blight_1148.jpg,Sheath blight,Brown spot,0.416627
+test/Sheath blight/Sheath blight_1169.jpg,Sheath blight,Healthy,0.960124
+test/Sheath blight/Sheath blight_1171.jpg,Sheath blight,Brown spot,0.983146
+test/Sheath blight/Sheath blight_1178.jpg,Sheath blight,Brown spot,0.466016
+test/Sheath blight/Sheath blight_1186.jpg,Sheath blight,Healthy,0.665444
+test/Sheath blight/Sheath blight_1192.jpg,Sheath blight,Brown spot,0.955632
+test/Sheath blight/Sheath blight_1193.jpg,Sheath blight,Brown spot,0.838433
+test/Sheath blight/Sheath blight_1232.jpg,Sheath blight,Brown spot,0.593672
+test/Sheath blight/Sheath blight_1247.jpg,Sheath blight,Rice Tungro,0.429103
+test/Sheath blight/Sheath blight_1256.jpg,Sheath blight,Rice Tungro,0.607029
+test/Sheath blight/Sheath blight_1264.jpg,Sheath blight,Rice Tungro,0.452153
+test/Sheath blight/Sheath blight_1266.jpg,Sheath blight,Rice Tungro,0.921701
+test/Sheath blight/Sheath blight_1285.jpg,Sheath blight,Healthy,0.989253
+test/Sheath blight/Sheath blight_1296.jpg,Sheath blight,Rice Tungro,0.959352
+test/Sheath blight/Sheath blight_13.jpg,Sheath blight,Healthy,0.897132
+test/Sheath blight/Sheath blight_1300.jpg,Sheath blight,Rice Tungro,0.839679
+test/Sheath blight/Sheath blight_1312.jpg,Sheath blight,Brown spot,0.650206
+test/Sheath blight/Sheath blight_1319.jpg,Sheath blight,Rice Tungro,0.988980
+test/Sheath blight/Sheath blight_132.jpg,Sheath blight,Rice Tungro,0.852055
+test/Sheath blight/Sheath blight_1331.jpg,Sheath blight,Rice Tungro,0.994628
+test/Sheath blight/Sheath blight_1354.jpg,Sheath blight,Rice Tungro,0.505661
+test/Sheath blight/Sheath blight_1356.jpg,Sheath blight,Rice Tungro,0.997032
+test/Sheath blight/Sheath blight_1373.jpg,Sheath blight,Rice Tungro,0.999008
+test/Sheath blight/Sheath blight_1378.jpg,Sheath blight,Rice Tungro,0.992122
+test/Sheath blight/Sheath blight_1386.jpg,Sheath blight,Rice Tungro,0.942474
+test/Sheath blight/Sheath blight_1387.jpg,Sheath blight,Rice Tungro,0.899839
+test/Sheath blight/Sheath blight_140.jpg,Sheath blight,Brown spot,0.714493
+test/Sheath blight/Sheath blight_1404.jpg,Sheath blight,Rice Tungro,0.954846
+test/Sheath blight/Sheath blight_1415.jpg,Sheath blight,Rice Tungro,0.498012
+test/Sheath blight/Sheath blight_1436.jpg,Sheath blight,Rice Tungro,0.997668
+test/Sheath blight/Sheath blight_1438.jpg,Sheath blight,Rice Tungro,0.996362
+test/Sheath blight/Sheath blight_1442.jpg,Sheath blight,Rice Tungro,0.994828
+test/Sheath blight/Sheath blight_1443.jpg,Sheath blight,Rice Tungro,0.994328
+test/Sheath blight/Sheath blight_1447.jpg,Sheath blight,Rice Tungro,0.374793
+test/Sheath blight/Sheath blight_1463.jpg,Sheath blight,Rice Tungro,0.903378
+test/Sheath blight/Sheath blight_1469.jpg,Sheath blight,Rice Tungro,0.753221
+test/Sheath blight/Sheath blight_147.jpg,Sheath blight,Brown spot,0.895480
+test/Sheath blight/Sheath blight_1493.jpg,Sheath blight,Healthy,0.999922
+test/Sheath blight/Sheath blight_1494.jpg,Sheath blight,Healthy,0.998730
+test/Sheath blight/Sheath blight_15.jpg,Sheath blight,Healthy,0.390954
+test/Sheath blight/Sheath blight_1506.jpg,Sheath blight,Healthy,0.975798
+test/Sheath blight/Sheath blight_1508.jpg,Sheath blight,Healthy,0.970893
+test/Sheath blight/Sheath blight_151.jpg,Sheath blight,Brown spot,0.547528
+test/Sheath blight/Sheath blight_1511.jpg,Sheath blight,Rice Tungro,0.957196
+test/Sheath blight/Sheath blight_1516.jpg,Sheath blight,Healthy,0.999686
+test/Sheath blight/Sheath blight_1517.jpg,Sheath blight,Healthy,0.999159
+test/Sheath blight/Sheath blight_1528.jpg,Sheath blight,Brown spot,0.561793
+test/Sheath blight/Sheath blight_153.jpg,Sheath blight,Brown spot,0.997139
+test/Sheath blight/Sheath blight_1534.jpg,Sheath blight,Brown spot,0.724234
+test/Sheath blight/Sheath blight_1538.jpg,Sheath blight,Brown spot,0.778631
+test/Sheath blight/Sheath blight_1542.jpg,Sheath blight,Brown spot,0.937634
+test/Sheath blight/Sheath blight_1547.jpg,Sheath blight,Healthy,0.884636
+test/Sheath blight/Sheath blight_1552.jpg,Sheath blight,Healthy,0.982172
+test/Sheath blight/Sheath blight_1554.jpg,Sheath blight,Healthy,0.991773
+test/Sheath blight/Sheath blight_1556.jpg,Sheath blight,Healthy,0.999584
+test/Sheath blight/Sheath blight_1559.jpg,Sheath blight,Brown spot,0.831888
+test/Sheath blight/Sheath blight_1561.jpg,Sheath blight,Healthy,0.999995
+test/Sheath blight/Sheath blight_1577.jpg,Sheath blight,Healthy,0.785867
+test/Sheath blight/Sheath blight_1578.jpg,Sheath blight,Healthy,0.726819
+test/Sheath blight/Sheath blight_1584.jpg,Sheath blight,Brown spot,0.917045
+test/Sheath blight/Sheath blight_1593.jpg,Sheath blight,Healthy,0.997260
+test/Sheath blight/Sheath blight_1603.jpg,Sheath blight,Healthy,0.975179
+test/Sheath blight/Sheath blight_1607.jpg,Sheath blight,Brown spot,0.981516
+test/Sheath blight/Sheath blight_161.jpg,Sheath blight,Healthy,0.850095
+test/Sheath blight/Sheath blight_1615.jpg,Sheath blight,Healthy,0.999941
+test/Sheath blight/Sheath blight_1623.jpg,Sheath blight,Leaf smut,0.881963
+test/Sheath blight/Sheath blight_1626.jpg,Sheath blight,Leaf smut,0.994953
+test/Sheath blight/Sheath blight_1627.jpg,Sheath blight,Leaf smut,0.998508
+test/Sheath blight/Sheath blight_1639.jpg,Sheath blight,Leaf smut,0.960716
+test/Sheath blight/Sheath blight_1641.jpg,Sheath blight,Leaf smut,0.981342
+test/Sheath blight/Sheath blight_1648.jpg,Sheath blight,Brown spot,0.998794
+test/Sheath blight/Sheath blight_1667.jpg,Sheath blight,Brown spot,0.578267
+test/Sheath blight/Sheath blight_1672.jpg,Sheath blight,Brown spot,0.841361
+test/Sheath blight/Sheath blight_1674.jpg,Sheath blight,Brown spot,0.516127
+test/Sheath blight/Sheath blight_1675.jpg,Sheath blight,Brown spot,0.931071
+test/Sheath blight/Sheath blight_1690.jpg,Sheath blight,Brown spot,0.986052
+test/Sheath blight/Sheath blight_1700.jpg,Sheath blight,Healthy,0.998615
+test/Sheath blight/Sheath blight_1703.jpg,Sheath blight,Healthy,0.998735
+test/Sheath blight/Sheath blight_1706.jpg,Sheath blight,Healthy,0.987847
+test/Sheath blight/Sheath blight_1713.jpg,Sheath blight,Rice Tungro,0.907919
+test/Sheath blight/Sheath blight_1719.jpg,Sheath blight,Rice Tungro,0.999532
+test/Sheath blight/Sheath blight_176.jpg,Sheath blight,Brown spot,0.745621
+test/Sheath blight/Sheath blight_178.jpg,Sheath blight,Brown spot,0.784444
+test/Sheath blight/Sheath blight_180.jpg,Sheath blight,Brown spot,0.787465
+test/Sheath blight/Sheath blight_182.jpg,Sheath blight,Rice Tungro,0.803800
+test/Sheath blight/Sheath blight_186.jpg,Sheath blight,Rice Tungro,0.627894
+test/Sheath blight/Sheath blight_188.jpg,Sheath blight,Rice Tungro,0.992802
+test/Sheath blight/Sheath blight_193.jpg,Sheath blight,Healthy,0.467041
+test/Sheath blight/Sheath blight_196.jpg,Sheath blight,Rice Tungro,0.595457
+test/Sheath blight/Sheath blight_22.jpg,Sheath blight,Brown spot,0.983686
+test/Sheath blight/Sheath blight_225.jpg,Sheath blight,Rice Tungro,0.932744
+test/Sheath blight/Sheath blight_226.jpg,Sheath blight,Rice Tungro,0.932744
+test/Sheath blight/Sheath blight_233.jpg,Sheath blight,Rice Tungro,0.442680
+test/Sheath blight/Sheath blight_234.jpg,Sheath blight,Rice Tungro,0.442680
+test/Sheath blight/Sheath blight_252.jpg,Sheath blight,Rice Tungro,0.998804
+test/Sheath blight/Sheath blight_253.jpg,Sheath blight,Rice Tungro,0.998804
+test/Sheath blight/Sheath blight_259.jpg,Sheath blight,Healthy,0.957805
+test/Sheath blight/Sheath blight_277.jpg,Sheath blight,Brown spot,0.948343
+test/Sheath blight/Sheath blight_278.jpg,Sheath blight,Brown spot,0.948343
+test/Sheath blight/Sheath blight_290.jpg,Sheath blight,Rice Tungro,0.951147
+test/Sheath blight/Sheath blight_292.jpg,Sheath blight,Rice Tungro,0.995331
+test/Sheath blight/Sheath blight_302.jpg,Sheath blight,Healthy,0.649837
+test/Sheath blight/Sheath blight_312.jpg,Sheath blight,Brown spot,0.967816
+test/Sheath blight/Sheath blight_333.jpg,Sheath blight,Healthy,0.913085
+test/Sheath blight/Sheath blight_338.jpg,Sheath blight,Brown spot,0.746796
+test/Sheath blight/Sheath blight_348.jpg,Sheath blight,Brown spot,0.752431
+test/Sheath blight/Sheath blight_358.jpg,Sheath blight,Rice Tungro,0.971138
+test/Sheath blight/Sheath blight_361.jpg,Sheath blight,Healthy,0.992905
+test/Sheath blight/Sheath blight_376.jpg,Sheath blight,Rice Tungro,0.999029
+test/Sheath blight/Sheath blight_378.jpg,Sheath blight,Rice Tungro,0.976814
+test/Sheath blight/Sheath blight_382.jpg,Sheath blight,Rice Tungro,0.976497
+test/Sheath blight/Sheath blight_401.jpg,Sheath blight,Brown spot,0.675802
+test/Sheath blight/Sheath blight_406.jpg,Sheath blight,Rice Tungro,0.976348
+test/Sheath blight/Sheath blight_414.jpg,Sheath blight,Rice Tungro,0.985400
+test/Sheath blight/Sheath blight_428.jpg,Sheath blight,Rice Tungro,0.500461
+test/Sheath blight/Sheath blight_432.jpg,Sheath blight,Rice Tungro,0.571813
+test/Sheath blight/Sheath blight_436.jpg,Sheath blight,Rice Tungro,0.971288
+test/Sheath blight/Sheath blight_437.jpg,Sheath blight,Rice Tungro,0.379321
+test/Sheath blight/Sheath blight_439.jpg,Sheath blight,Rice Tungro,0.998782
+test/Sheath blight/Sheath blight_442.jpg,Sheath blight,Healthy,0.511961
+test/Sheath blight/Sheath blight_462.jpg,Sheath blight,Rice Tungro,0.470475
+test/Sheath blight/Sheath blight_464.jpg,Sheath blight,Blast,0.827560
+test/Sheath blight/Sheath blight_465.jpg,Sheath blight,Brown spot,0.631739
+test/Sheath blight/Sheath blight_467.jpg,Sheath blight,Rice Tungro,0.990628
+test/Sheath blight/Sheath blight_472.jpg,Sheath blight,Healthy,0.953219
+test/Sheath blight/Sheath blight_484.jpg,Sheath blight,Brown spot,0.612089
+test/Sheath blight/Sheath blight_5.jpg,Sheath blight,Blast,0.984401
+test/Sheath blight/Sheath blight_507.jpg,Sheath blight,Rice Tungro,0.995354
+test/Sheath blight/Sheath blight_51.jpg,Sheath blight,Blast,0.585900
+test/Sheath blight/Sheath blight_514.jpg,Sheath blight,Rice Tungro,0.898805
+test/Sheath blight/Sheath blight_523.jpg,Sheath blight,Brown spot,0.499433
+test/Sheath blight/Sheath blight_528.jpg,Sheath blight,Blast,0.901855
+test/Sheath blight/Sheath blight_536.jpg,Sheath blight,Rice Tungro,0.789976
+test/Sheath blight/Sheath blight_540.jpg,Sheath blight,Rice Tungro,0.799200
+test/Sheath blight/Sheath blight_558.jpg,Sheath blight,Rice Tungro,0.971703
+test/Sheath blight/Sheath blight_559.jpg,Sheath blight,Rice Tungro,0.963880
+test/Sheath blight/Sheath blight_566.jpg,Sheath blight,Brown spot,0.989967
+test/Sheath blight/Sheath blight_598.jpg,Sheath blight,Healthy,0.547146
+test/Sheath blight/Sheath blight_6.jpg,Sheath blight,Brown spot,0.534275
+test/Sheath blight/Sheath blight_602.jpg,Sheath blight,Healthy,0.766367
+test/Sheath blight/Sheath blight_610.jpg,Sheath blight,Healthy,0.384541
+test/Sheath blight/Sheath blight_615.jpg,Sheath blight,Rice Tungro,0.872044
+test/Sheath blight/Sheath blight_617.jpg,Sheath blight,Rice Tungro,0.843759
+test/Sheath blight/Sheath blight_620.jpg,Sheath blight,Rice Tungro,0.966093
+test/Sheath blight/Sheath blight_631.jpg,Sheath blight,Healthy,0.995745
+test/Sheath blight/Sheath blight_643.jpg,Sheath blight,Healthy,0.818744
+test/Sheath blight/Sheath blight_648.jpg,Sheath blight,Rice Tungro,0.994421
+test/Sheath blight/Sheath blight_649.jpg,Sheath blight,Rice Tungro,0.994218
+test/Sheath blight/Sheath blight_653.jpg,Sheath blight,Rice Tungro,0.993696
+test/Sheath blight/Sheath blight_655.jpg,Sheath blight,Rice Tungro,0.996975
+test/Sheath blight/Sheath blight_660.jpg,Sheath blight,Brown spot,0.869826
+test/Sheath blight/Sheath blight_664.jpg,Sheath blight,Healthy,0.466792
+test/Sheath blight/Sheath blight_672.jpg,Sheath blight,Rice Tungro,0.988603
+test/Sheath blight/Sheath blight_678.jpg,Sheath blight,Rice Tungro,0.750956
+test/Sheath blight/Sheath blight_680.jpg,Sheath blight,Rice Tungro,0.826866
+test/Sheath blight/Sheath blight_696.jpg,Sheath blight,Rice Tungro,0.961021
+test/Sheath blight/Sheath blight_704.jpg,Sheath blight,Leaf smut,0.819463
+test/Sheath blight/Sheath blight_710.jpg,Sheath blight,Healthy,0.932099
+test/Sheath blight/Sheath blight_718.jpg,Sheath blight,Rice Tungro,0.870169
+test/Sheath blight/Sheath blight_721.jpg,Sheath blight,Healthy,0.301182
+test/Sheath blight/Sheath blight_735.jpg,Sheath blight,Healthy,0.556792
+test/Sheath blight/Sheath blight_737.jpg,Sheath blight,Healthy,0.602502
+test/Sheath blight/Sheath blight_742.jpg,Sheath blight,Rice Tungro,0.841076
+test/Sheath blight/Sheath blight_744.jpg,Sheath blight,Rice Tungro,0.461726
+test/Sheath blight/Sheath blight_746.jpg,Sheath blight,Healthy,0.598056
+test/Sheath blight/Sheath blight_748.jpg,Sheath blight,Healthy,0.528055
+test/Sheath blight/Sheath blight_759.jpg,Sheath blight,Rice Tungro,0.716827
+test/Sheath blight/Sheath blight_76.jpg,Sheath blight,Blast,0.946499
+test/Sheath blight/Sheath blight_773.jpg,Sheath blight,Healthy,0.975838
+test/Sheath blight/Sheath blight_790.jpg,Sheath blight,Rice Tungro,0.974971
+test/Sheath blight/Sheath blight_80.jpg,Sheath blight,Rice Tungro,0.432944
+test/Sheath blight/Sheath blight_834.jpg,Sheath blight,Healthy,0.726921
+test/Sheath blight/Sheath blight_836.jpg,Sheath blight,Rice Tungro,0.980183
+test/Sheath blight/Sheath blight_84.jpg,Sheath blight,Rice Tungro,0.992738
+test/Sheath blight/Sheath blight_847.jpg,Sheath blight,Rice Tungro,0.798736
+test/Sheath blight/Sheath blight_859.jpg,Sheath blight,Rice Tungro,0.957365
+test/Sheath blight/Sheath blight_874.jpg,Sheath blight,Rice Tungro,0.998194
+test/Sheath blight/Sheath blight_877.jpg,Sheath blight,Healthy,0.586623
+test/Sheath blight/Sheath blight_889.jpg,Sheath blight,Rice Tungro,0.915579
+test/Sheath blight/Sheath blight_890.jpg,Sheath blight,Rice Tungro,0.780292
+test/Sheath blight/Sheath blight_892.jpg,Sheath blight,Brown spot,0.600821
+test/Sheath blight/Sheath blight_893.jpg,Sheath blight,Rice Tungro,0.984397
+test/Sheath blight/Sheath blight_912.jpg,Sheath blight,Rice Tungro,0.682707
+test/Sheath blight/Sheath blight_914.jpg,Sheath blight,Rice Tungro,0.833944
+test/Sheath blight/Sheath blight_915.jpg,Sheath blight,Rice Tungro,0.965988
+test/Sheath blight/Sheath blight_916.jpg,Sheath blight,Rice Tungro,0.900605
+test/Sheath blight/Sheath blight_917.jpg,Sheath blight,Rice Tungro,0.989125
+test/Sheath blight/Sheath blight_926.jpg,Sheath blight,Rice Tungro,0.963716
+test/Sheath blight/Sheath blight_959.jpg,Sheath blight,Rice Tungro,0.792341
+test/Sheath blight/Sheath blight_965.jpg,Sheath blight,Brown spot,0.422341
+test/Sheath blight/Sheath blight_975.jpg,Sheath blight,Healthy,0.988429
+test/Sheath blight/Sheath blight_978.jpg,Sheath blight,Healthy,0.999623
+test/Sheath blight/Sheath blight_979.jpg,Sheath blight,Rice Tungro,0.849145
+test/Sheath blight/Sheath blight_982.jpg,Sheath blight,Rice Tungro,0.601980
+test/Sheath blight/Sheath blight_987.jpg,Sheath blight,Rice Tungro,0.803743
+test/Sheath blight/Sheath blight_988.jpg,Sheath blight,Rice Tungro,0.963668
+test/Sheath blight/Sheath blight_993.jpg,Sheath blight,Brown spot,0.612937

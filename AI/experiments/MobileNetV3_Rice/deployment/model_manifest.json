@@ -1,0 +1,95 @@
+{
+  "model": "MobileNetV3-Large",
+  "selection": "provisional primary rice disease classifier",
+  "source_checkpoint": "../best_model.pt",
+  "source_checkpoint_sha256": "99bd70c5fa8ee99c1d578c44e6099cd8133499ddfdaf1609180cf6530846e5b0",
+  "source_checkpoint_bytes": 17042371,
+  "source_preserved": true,
+  "checkpoint_epoch": 5,
+  "class_mapping": {
+    "Blast": 0,
+    "Brown spot": 1,
+    "Healthy": 2,
+    "Leaf smut": 3,
+    "Rice Tungro": 4,
+    "Sheath blight": 5
+  },
+  "architecture": "torchvision.models.mobilenet_v3_large; classifier[-1]=Linear(1280,6)",
+  "parameters": 4209718,
+  "preprocessing": "preprocessing_config.json",
+  "test_set_used_for_export_or_quantization": false,
+  "calibration": "first 256 rows of approved train.csv; no labels used",
+  "validation_comparison": "deployment_comparison.csv",
+  "onnx": {
+    "mobilenetv3_large_fp32.onnx": {
+      "sha256": "084ef3272e2a9f8caaa26c70723a31614236b1b2930bba1dcb76f00f143a08f5",
+      "bytes": 16841368
+    },
+    "mobilenetv3_large_fp16.onnx": {
+      "sha256": "db125f888e1c3708e149192045e951f8387cd12b3b87fdcaf5c1a8d6fa7c1082",
+      "bytes": 8446815
+    },
+    "mobilenetv3_large_int8_train_calibrated.onnx": {
+      "sha256": "baed18293ac298b279c5f5ba4fb23701894fb5d25703665463a1a643208d5db6",
+      "bytes": 4716275
+    }
+  },
+  "tflite_status": "FP32 and FP16 LiteRT/TFLite exported and executed on Windows CPU; dynamic-range INT8 weight-only exported and executed. Full integer activation quantization failed in TensorFlow 2.10 converter. Android device not tested.",
+  "coreml_status": "Core ML neuralnetwork .mlmodel serialized successfully; runtime unavailable on Windows",
+  "baseline_validation": {
+    "top1_accuracy": 0.8926862611073137,
+    "top5_accuracy": 0.9972658920027341,
+    "macro_f1": 0.8769795201787519,
+    "weighted_f1": 0.8930194456077701,
+    "latency_ms_per_image": 16.664114763695423
+  },
+  "conversion_environment": {
+    "python": "3.11.18 | packaged by Anaconda, Inc. | (main, Oct 26 2026, 18:13:29) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "torch": "2.14.1+cpu",
+    "torchvision": "0.29.1+cpu",
+    "onnx": "1.23.2",
+    "onnxruntime": "1.32.0"
+  },
+  "source_checkpoint_sha256_verified_after_export": "99bd70c5fa8ee99c1d578c44e6099cd8133499ddfdaf1609180cf6530846e5b0",
+  "source_checkpoint_unchanged": true,
+  "coreml_artifact": {
+    "path": "mobilenetv3_large_fp32.mlmodel",
+    "bytes": 16802874,
+    "sha256": "f50223f302a7b8e0293e1b199bad263d129ed389e6a394d206bde7cdb22e4f45"
+  },
+  "litert_artifacts": [
+    {
+      "path": "tflite_fp32/mobilenetv3_large_fp32_float32.tflite",
+      "bytes": 16844472,
+      "sha256": "851ea939ea195dc6fa8bcf2b3fbb87cf70083d63b79286cf72004dec27947d3f"
+    },
+    {
+      "path": "tflite_fp32/mobilenetv3_large_fp32_float16.tflite",
+      "bytes": 8464896,
+      "sha256": "f51107017b49cc15338bd020bb7c80c93549b96da6b757dd816dd4218065416a"
+    },
+    {
+      "path": "tflite_int8/mobilenetv3_large_fp32_dynamic_range_quant.tflite",
+      "bytes": 4518296,
+      "sha256": "97d2bf19b9f9da7fd0a61418c77563f8dfde168c06ab89a938b47a40b2f6ffe9"
+    }
+  ],
+  "litert_runtime_status": {
+    "tensorflow": "2.10.1",
+    "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Jun 11 2026, 15:13:20) [MSC v.1942 64 bit (AMD64)]",
+    "calibration": "dynamic-range weight-only conversion; no activation calibration required",
+    "evaluation": "all approved val.csv rows; frozen test split not loaded",
+    "tflite_models": [
+      "tflite_fp32\\mobilenetv3_large_fp32_float32.tflite",
+      "tflite_fp32\\mobilenetv3_large_fp32_float16.tflite",
+      "tflite_int8\\mobilenetv3_large_fp32_dynamic_range_quant.tflite"
+    ],
+    "runtime": "TensorFlow Lite CPU interpreter; Android device runtime not tested",
+    "int8_quantization": "dynamic-range weight-only quantization; full integer activation quantization failed converter on Windows TensorFlow 2.10"
+  },
+  "litert_int8_type": "Dynamic range, weight-only INT8; FP32 input/output; not full integer",
+  "full_integer_tflite_status": "Conversion attempted with representative data but failed in TensorFlow 2.10/onnx2tf; no full-integer file produced",
+  "android_device_tested": false,
+  "ios_device_tested": false
+}
