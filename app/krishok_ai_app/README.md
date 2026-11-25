@@ -10,7 +10,8 @@ Early React Native foundation for rice leaf disease information and future disea
 - SQLite-backed preferences and detection history repositories.
 - Detection interfaces and a native LiteRT adapter path are prepared.
 - No model is bundled and no prediction is fabricated. AI detection remains unavailable until a local verified model, device-tested preprocessing, and native inference are configured.
-- An optional online inference API is available in the repository's `backend/` folder. Configure `EXPO_PUBLIC_API_URL` before starting Expo to use it.
+- Camera live detection sends a low-resolution still frame to the online API after each inference completes, then displays the current rice class and confidence. Configure `EXPO_PUBLIC_API_URL` in `.env.local` before starting Expo; a physical device needs a reachable HTTPS API URL or your computer's LAN IP, not `localhost`.
+- Still-photo AI checks and camera live detection use the same online model endpoint. Offline on-device model inference remains unavailable until a verified model is bundled and device-tested.
 
 ## Website and backend
 

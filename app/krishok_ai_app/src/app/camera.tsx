@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ActivityIndicator, Linking, Pressable, StyleSheet, View } from 'react-native';
 import { CameraView, useCameraPermissions } from 'expo-camera';
 import { useRouter } from 'expo-router';
@@ -9,7 +9,11 @@ import { Notice } from '@/components/Notice';
 import { Screen } from '@/components/Screen';
 import { ScreenHeader } from '@/components/ScreenHeader';
 import { PrimaryButton } from '@/components/PrimaryButton';
+import { SurfaceCard } from '@/components/SurfaceCard';
+import { detectDisease } from '@/core/ai/detectionService';
+import { DetectionServiceError } from '@/core/ai/errors';
 import { colors, radius, spacing } from '@/core/theme';
+import { DISEASE_CLASSES, type PredictionResult } from '@/domain/disease';
 
 export default function CameraScreen() {
   const { t } = useTranslation();
@@ -20,9 +24,26 @@ export default function CameraScreen() {
   const [ready, setReady] = useState(false);
   const [capturing, setCapturing] = useState(false);
   const [error, setError] = useState('');
+  const [live, setLive] = useState(false);
+  const [liveBusy, setLiveBusy] = useState(false);
+  const [livePrediction, setLivePrediction] = useState<PredictionResult | null>(null);
+  const [liveError, setLiveError] = useState('');
+  const liveActive = useRef(false);
+  const mounted = useRef(true);
+
+  useEffect(
+    () => {
+      mounted.current = true;
+      return () => {
+        mounted.current = false;
+        liveActive.current = false;
+      };
+    },
+    [],
+  );
 
   const capture = async () => {
-    if (!camera.current || !ready || capturing) return;
+    if (!camera.current || !ready || capturing || liveActive.current) return;
     setError('');
     setCapturing(true);
     try {
@@ -39,6 +60,51 @@ export default function CameraScreen() {
       setCapturing(false);
     }
   };
+
+  const toggleLiveDetection = async () => {
+    if (liveActive.current) {
+      liveActive.current = false;
+      setLive(false);
+      return;
+    }
+    if (!camera.current || !ready) return;
+
+    liveActive.current = true;
+    setLive(true);
+    setLiveError('');
+    setLivePrediction(null);
+
+    while (liveActive.current) {
+      setLiveBusy(true);
+      try {
+        const photo = await camera.current?.takePictureAsync({
+          quality: 0.48,
+          exif: false,
+          shutterSound: false,
+        });
+        if (!photo?.uri) throw new Error('MissingLiveFrame');
+        const prediction = await detectDisease({ imageUri: photo.uri, mode: 'online' });
+        if (liveActive.current && mounted.current) setLivePrediction(prediction);
+      } catch (cause) {
+        if (liveActive.current && mounted.current) {
+          setLiveError(
+            cause instanceof DetectionServiceError && cause.code === 'ONLINE_NOT_CONFIGURED'
+              ? t('errors.onlineNotConfigured')
+              : t('camera.liveError'),
+          );
+        }
+        liveActive.current = false;
+      } finally {
+        if (mounted.current) setLiveBusy(false);
+      }
+      if (liveActive.current) {
+        await new Promise((resolve) => setTimeout(resolve, 1400));
+      }
+    }
+    if (mounted.current) setLive(false);
+  };
+
+  const selectedDisease = livePrediction ? DISEASE_CLASSES[livePrediction.classId] : null;
 
   return (
     <Screen>
@@ -87,6 +153,7 @@ export default function CameraScreen() {
               accessibilityLabel={t('camera.flip')}
               onPress={() => setFacing((current) => (current === 'back' ? 'front' : 'back'))}
               style={styles.flip}
+              disabled={live}
             >
               <Ionicons name="sync" size={22} color="#FFFFFF" />
             </Pressable>
@@ -96,11 +163,43 @@ export default function CameraScreen() {
             {t('home.healthyTip')}
           </AppText>
           <PrimaryButton
+            label={live ? t('camera.liveStop') : t('camera.liveStart')}
+            icon={live ? 'pause' : 'scan'}
+            secondary={!live}
+            onPress={() => void toggleLiveDetection()}
+            disabled={!ready || capturing}
+          />
+          <AppText variant="caption" style={styles.muted}>
+            {t('camera.livePrivacy')}
+          </AppText>
+          {live || liveBusy ? (
+            <SurfaceCard style={styles.liveStatus}>
+              <View style={styles.liveDot} />
+              <AppText style={styles.liveStatusText}>
+                {liveBusy ? t('camera.liveAnalyzing') : t('camera.liveActive')}
+              </AppText>
+            </SurfaceCard>
+          ) : null}
+          {liveError ? (
+            <Notice title={t('errors.generic')} body={liveError} tone="error" />
+          ) : null}
+          {selectedDisease && livePrediction ? (
+            <SurfaceCard style={styles.liveResult}>
+              <AppText variant="caption" style={styles.muted}>
+                {t('camera.liveResult')}
+              </AppText>
+              <AppText variant="title">{t(`disease.${selectedDisease.key}`)}</AppText>
+              <AppText style={styles.muted}>
+                {t('camera.confidence', { value: Math.round(livePrediction.confidence * 100) })}
+              </AppText>
+            </SurfaceCard>
+          ) : null}
+          <PrimaryButton
             label={t('camera.capture')}
             icon="camera"
             onPress={() => void capture()}
             loading={capturing}
-            disabled={!ready}
+            disabled={!ready || live || capturing}
           />
         </>
       )}
@@ -121,6 +220,10 @@ const styles = StyleSheet.create({
   },
   center: { textAlign: 'center' },
   muted: { color: colors.textMuted },
+  liveStatus: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, paddingVertical: spacing.sm },
+  liveStatusText: { color: colors.primaryDark },
+  liveDot: { width: 9, height: 9, borderRadius: 5, backgroundColor: '#D64E43' },
+  liveResult: { gap: spacing.xs },
   previewWrap: {
     height: 470,
     borderRadius: radius.lg,
